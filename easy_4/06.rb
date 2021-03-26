@@ -18,7 +18,7 @@ puts running_total([3]) == [3]
 puts running_total([]) == []
 puts
 
-# Option 2:
+# Option 2: using each_with_object
 
 def running_total2(array)
   total = 0
@@ -32,4 +32,19 @@ puts running_total2([2, 5, 13]) == [2, 7, 20]
 puts running_total2([14, 11, 7, 15, 20]) == [14, 25, 32, 47, 67]
 puts running_total2([3]) == [3]
 puts running_total2([]) == []
+puts
+
+# Option 3: using inject
+
+def running_total3(array)
+  sum = 0
+  array.map do |num|
+    sum = [sum, num].inject(:+)
+  end
+end
+
+puts running_total3([2, 5, 13]) == [2, 7, 20]
+puts running_total3([14, 11, 7, 15, 20]) == [14, 25, 32, 47, 67]
+puts running_total3([3]) == [3]
+puts running_total3([]) == []
 puts
