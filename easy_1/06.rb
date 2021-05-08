@@ -21,13 +21,10 @@ puts reverse_words('Launch School')         # => hcnuaL loohcS
 - Join the elements in the array
 =end
 
-def reverse_words(input_string)
-  words = input_string.split
-  words.map! { |word| word.length >= 5 ? word.reverse : word }
-  words.join(' ')
+def reverse_words(string)
+  string.split.map! { |word| word.size >= 5 ? word.reverse : word }.join(' ')
 end
 
-puts reverse_words('Professional')          # => lanoisseforP
-puts reverse_words('Walk around the block') # => Walk dnuora the kcolb
-puts reverse_words('Launch School')         # => hcnuaL loohcS
-
+puts reverse_words('Professional') == "lanoisseforP"
+puts reverse_words('Walk around the block') == "Walk dnuora the kcolb"
+puts reverse_words('Launch School') == "hcnuaL loohcS"

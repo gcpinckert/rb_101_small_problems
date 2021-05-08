@@ -19,7 +19,7 @@ puts calculate_bonus(50000, true) == 25000
 =end
 
 def calculate_bonus(salary, gets_bonus)
-  gets_bonus ? (salary / 2) : 0
+  gets_bonus ? (salary * 0.5).round(2) : 0
 end
 
 puts calculate_bonus(2800, true) == 1400

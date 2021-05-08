@@ -1,40 +1,51 @@
 =begin
-- Write a method that counts the number of occurrences of each element in
-  a given array. 
-- The words in the array are case-sensitive
-- Once counted, print each element alongside the # of occurrences
+# Problem:
+ - Write a method that counts the number of occurrences of each element in a given array
+ - Input: An array of strings
+ - Output: Each element in the input array, along with the number of times it occurs
+ - strings in the array are case-insensitive ie suv == SUV
+ - Print each element alongside the number of occurrences.
+ 
+ # Example:
+ vehicles = [
+  'car', 'car', 'truck', 'car', 'SUV', 'truck',
+  'motorcycle', 'motorcycle', 'car', 'truck'
+]
 
-Expected Output:
+count_occurrences(vehicles)
+---
 car => 4
 truck => 3
 SUV => 1
 motorcycle => 2
 
-Input = Array
-Output = Hash
+# Data Structure: 
+- Hash, in which each key is the element, and the value is the number of occurances
 
-- Create a new empty hash
-- Iterate through the array, for each element:
-  - Add the element as a key in the hash
-  - If the key doesn't already exist:
-    - Set the corresponding value to 1
-  - If the key does already exist:
-    - Add 1 to the corresponding value
-- Output each key - value pair to the user
+# Algorithm:
+- Initialize an empty hash `occurrences`
+- Iterate over given array, for each element
+  - Set current element to all lowercase
+  - Does element exist as a key in the hash?
+    - If yes, increment value by 1
+    - If no, create hash key and set value to 1
+- Iterate over the hash, and output each key-value pair according to the example case
 =end
 
-def count_occurrences(array_of_things)
-  occurrences = {}
-
-  array_of_things.each do |thing|
-    if occurrences.keys.include?(thing)
-      occurrences[thing] += 1
+def count_occurrences(array)
+  array.each_with_object({}) do |element, occurrences|
+    if occurrences.keys.include?(element)
+      occurrences[element] += 1
     else
-      occurrences[thing] = 1
+      occurrences[element] = 1
     end
   end
-  
-  occurrences.each { |name, number| puts "#{name} => #{number}"}
+end
+
+def display_occurrences(hash)
+  hash.each do |element, occurrences|
+    puts "#{element} => #{occurrences}"
+  end
 end
 
 vehicles = [
@@ -42,25 +53,19 @@ vehicles = [
   'motorcycle', 'motorcycle', 'car', 'truck'
 ]
 
-count_occurrences(vehicles)
+display_occurrences(count_occurrences(vehicles))
 
 # BONUS: made a case-insensitive version
 
-def case_insensitive_count_occurrences(array_of_things)
-  occurrences = {}
-
-  array_of_things.map! { |element| element.downcase }
-
-  array_of_things.each do |thing|
-    if occurrences.keys.include?(thing)
-      occurrences[thing] += 1
+def case_insensitive_count_occurrences(array)
+  array.each_with_object({}) do |element, occurrences|
+    element = element.downcase
+    if occurrences.keys.include?(element)
+      occurrences[element] += 1
     else
-      occurrences[thing] = 1
+      occurrences[element] = 1
     end
   end
-  
-  occurrences.each { |name, number| puts "#{name} => #{number}"}
-
 end
 
 vehicles = [
@@ -68,4 +73,4 @@ vehicles = [
   'motorcycle', 'motorcycle', 'car', 'truck', 'suv'
 ]
 
-case_insensitive_count_occurrences(vehicles)
+display_occurrences(case_insensitive_count_occurrences(vehicles))
