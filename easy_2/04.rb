@@ -22,14 +22,12 @@ You have only 40 years of work to go!
 
 CURRENT_YEAR = Time.now.year
 
-def get_age
+def get_ages
   print "What is your age? "
-  gets.chomp.to_i
-end
-
-def get_retirement_age
+  current_age = gets.chomp.to_i
   print "At what age would you like to retire? "
-  gets.chomp.to_i
+  retirement_age = gets.chomp.to_i
+  [current_age, retirement_age]
 end
 
 def calculate_years_to_retire(age, retirement_age)
@@ -46,8 +44,7 @@ def display_results(years_to_retire, retirement_year)
   puts "You have only #{years_to_retire} years of work to go!"
 end
 
-age = get_age
-retirement_age = get_retirement_age
+age, retirement_age = get_ages
 years_to_retire = calculate_years_to_retire(age, retirement_age)
 retirement_year = calculate_retirement_year(years_to_retire)
 display_results(years_to_retire, retirement_year)

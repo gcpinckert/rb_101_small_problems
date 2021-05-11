@@ -23,14 +23,12 @@ The total is $230.0
 
 =end
 
-def get_bill
+def get_amounts
   print "What is the bill? "
-  gets.chomp.to_f
-end
-
-def get_tip_percent
+  bill = gets.chomp.to_f
   print "What is the tip percentage? "
-  (gets.chomp.to_f) / 100
+  tip_rate = (gets.chomp.to_f) / 100
+  [bill, tip_rate]
 end
 
 def calculate_tip(bill, tip_percent)
@@ -43,12 +41,11 @@ end
 
 def display_results(total, tip)
   puts
-  puts "The tip is #{format('%.2f', tip)}"
-  puts "The total is #{format('%.2f', total)}"
+  puts "The tip is $#{format('%.2f', tip)}"
+  puts "The total is $#{format('%.2f', total)}"
 end
 
-bill = get_bill
-tip_percent = get_tip_percent
+bill, tip_percent = get_amounts
 tip = calculate_tip(bill, tip_percent)
 total = calculate_total(bill, tip)
 display_results(total, tip)

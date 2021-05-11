@@ -13,11 +13,13 @@ HELLO BOB. WHY ARE WE SCREAMING?
 - Input = string (name)
 - Output = string (greeting)
 
-- Get users name
+- Prompt user for their name
 - If users name ends in !
-  - Display greeting_scream
+  - Remove `!` from the name string
+  - Make the name string uppercase
+  - Display shouted greeting (given)
 - Otherwise
-  - Display greeting_normal
+  - Display the normal greeting (given)
 =end
 
 def gets_name

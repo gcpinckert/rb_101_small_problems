@@ -32,16 +32,12 @@ SQMETERS_TO_SQFEET_CONVERSION = 10.7639
 SQFEET_TO_SQINCHES_CONVERSION = 144
 SQINCHES_TO_SQCM_CONVERSION = 6.4516
 
-def get_length
-  puts "Enter the length of the room in feet:"
+def get_dimensions
+  puts "Enter the length of the room in meters:"
   length = gets.chomp.to_f
-  length
-end
-
-def get_width
-  puts "Enter the width of the room in feet:"
+  puts "Enter the width of the room in meters:"
   width = gets.chomp.to_f
-  width
+  [length, width]
 end
 
 def calculate_area_feet(length, width)
@@ -61,8 +57,7 @@ def display_result(area_feet, area_inches, area_cm)
         "#{area_inches} square inches, or #{area_cm} square centimeters."
 end
 
-length = get_length
-width = get_width
+length, width = get_dimensions
 area_feet = calculate_area_feet(length, width)
 area_inches = calculate_area_inches(area_feet)
 area_cm = calculate_area_cm(area_inches)

@@ -1,26 +1,43 @@
 =begin
-- Build a program that randomly generates and prints Teddy's age.
-- Teddy's age should be a randomly generated number between 20 and 200.
+# Problem
 
-Example Output:
-Teddy is 69 years old!
+Build a program that randomly generates and prints Teddy's age. To get the age, you should generate a random number between 20 and 200.
 
-- Input: none
-- Output: string
+- No input
+- Randomly generate a number between 20 - 200
+  - Should it be a whole integer?
+  - Is the range inclusive? (i.e. can Teddy be both 20 and 200?)
+- Output that number interpolated into the given sentence.
 
-- Set variable age equal to a randomly generate number between 20-200
-- Use string interpolation to print that variable in the desired string
+# Example
+ => Teddy is 69 years old!
+ 
+# Data Structures
+- Ints & strings
+
+# Algorithim
+
+- Initialize a range of numbers, 20 - 200, inclusive
+- Convert the range to an array
+- Randomly select a number from that array
+- Output the selected number interpolated into the given sentence
 =end
 
-age = rand(20..200)
-puts "Teddy is #{age} years old!"
+def display_teddy_age
+  age = (20..200).to_a.sample
+  puts "Teddy is #{age} years old!"
+end
+
+display_teddy_age
+display_teddy_age
+display_teddy_age
 
 # Further Exploration:
 # Have the program ask for name, and print the age for that person
 # Use "Teddy" if no name is entered.
 
 def display_age(name="Teddy")
-  age = rand(20..200)
+  age = (20..200).to_a.sample
   puts "#{name} is #{age} years old!"
 end
 

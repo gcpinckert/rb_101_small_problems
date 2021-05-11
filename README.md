@@ -16,11 +16,11 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Sum of Digits](./easy_1/09.rb) - current time 4:21
   - [x] [What's my Bonus?](./easy_1/10.rb) - current time 3:47
 - [ ] Easy 2
-  - [ ] [How old is Teddy?](./easy_2/01.rb)
-  - [ ] [How big is the room?](./easy_2/02.rb)
-  - [ ] [Tip calculator](./easy_2/03.rb)
-  - [ ] [When will I Retire?](./easy_2/04.rb)
-  - [ ] [Greeting a user](./easy_2/05.rb)
+  - [x] [How old is Teddy?](./easy_2/01.rb)
+  - [x] [How big is the room?](./easy_2/02.rb) - current time 9:02
+  - [x] [Tip calculator](./easy_2/03.rb) - current time 8:45
+  - [x] [When will I Retire?](./easy_2/04.rb) - current time 11:08
+  - [x] [Greeting a user](./easy_2/05.rb)
   - [ ] [Odd Numbers](./easy_2/06.rb)
   - [ ] [Even Numbers](./easy_2/07.rb)
   - [ ] [Sum or Product of Consecutive Integers](./easy_2/08.rb)
