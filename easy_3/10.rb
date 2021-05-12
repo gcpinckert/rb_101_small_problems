@@ -12,3 +12,7 @@ puts palindromic_number?(34543) == true
 puts palindromic_number?(123210) == false
 puts palindromic_number?(22) == true
 puts palindromic_number?(5) == true
+
+# Note: leading 0s turn an integer into an octal number
+# Any conversions to different data types transfer this into a base 10
+# How to isolate each digit to determine if the number is palindromic?

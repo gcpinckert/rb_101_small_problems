@@ -15,7 +15,7 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Array Average](./easy_1/08.rb) - current time 5:42
   - [x] [Sum of Digits](./easy_1/09.rb) - current time 4:21
   - [x] [What's my Bonus?](./easy_1/10.rb) - current time 3:47
-- [ ] Easy 2
+- [x] Easy 2
   - [x] [How old is Teddy?](./easy_2/01.rb)
   - [x] [How big is the room?](./easy_2/02.rb) - current time 9:02
   - [x] [Tip calculator](./easy_2/03.rb) - current time 8:45
@@ -24,20 +24,20 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Odd Numbers](./easy_2/06.rb) - current time 2:58
   - [x] [Even Numbers](./easy_2/07.rb)
   - [x] [Sum or Product of Consecutive Integers](./easy_2/08.rb) - current time 17:44
-  - [ ] [String Assignment](./easy_2/09.rb)
-  - [ ] [Mutation](./easy_2/10.rb)
+  - [x] [String Assignment](./easy_2/09.rb)
+  - [x] [Mutation](./easy_2/10.rb)
 - [ ] Easy 3
-  - [ ] [Searching 101](./easy_3/01.rb)
-  - [ ] [Arithmetic Integer](./easy_3/02.rb)
-  - [ ] [Counting the Number of Characters](./easy_3/03.rb)
-  - [ ] [Multiplying Two Numbers](./easy_3/04.rb)
-  - [ ] [Squaring an Argument](./easy_3/05.rb)
-  - [ ] [Exclusive Or](./easy_3/06.rb)
-  - [ ] [Odd Lists](./easy_3/07.rb)
-  - [ ] [Palindromic Strings (Part 1)](./easy_3/08.rb)
-  - [ ] [Palindromic Strings (Part 2)](./easy_3/09.rb)
-  - [ ] [Palindromic Numbers](./easy_3/10.rb)
-- [ ] Easy 4
+  - [x] [Searching 101](./easy_3/01.rb) - current time 9:04
+  - [x] [Arithmetic Integer](./easy_3/02.rb)
+  - [x] [Counting the Number of Characters](./easy_3/03.rb) - current time 8:01
+  - [x] [Multiplying Two Numbers](./easy_3/04.rb)
+  - [x] [Squaring an Argument](./easy_3/05.rb)
+  - [x] [Exclusive Or](./easy_3/06.rb) - current time 6:21
+  - [x] [Odd Lists](./easy_3/07.rb) - current time 7:02
+  - [x] [Palindromic Strings (Part 1)](./easy_3/08.rb)
+  - [x] [Palindromic Strings (Part 2)](./easy_3/09.rb) - current time 9:12
+  - [x] [Palindromic Numbers](./easy_3/10.rb) - Further Exploration into leading 0s
+- [x] Easy 4
   - [ ] [Short Long Short](./easy_4/01.rb)
   - [ ] [What Century is That?](./easy_4/02.rb)
   - [ ] [Leap Years (Part 1)](./easy_4/03.rb)

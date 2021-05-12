@@ -6,6 +6,13 @@
   # Ignore all non-alphanumeric characters (punctuation)
   # You may use the palindrome? method from 08.rb
 
+# Algorithm
+  # Convert the string to an array of lowercase characters
+  # Initialize an empty string as `test_string`
+  # Iterate over all the characters, for each character
+    # Is it alphanumeric? if yes, add it to the test_string
+  # See if the test_string is the same backwards and forwards
+
 def palindrome?(str_or_array)
   str_or_array.reverse == str_or_array
 end

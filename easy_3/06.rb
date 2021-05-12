@@ -12,17 +12,18 @@
   # xor?(5.odd?, 4.even?) == false
   # xor?(5.even?, 4.odd?) == false
 
-def xor?(bool_a, bool_b)
-  if bool_a && bool_b
-    return false
-  elsif !bool_a && !bool_b
-    return false
-  else
-    return true
-  end
+# Algorithm
+  # Check to see if the boolean return values of the expressions/objects are equal
+  # If they are the same (i.e. both true or both false) return false
+  # Otherwise, return true
+
+def xor?(a, b)
+  !!a == !!b ? false : true
 end
 
-puts xor?(5.even?, 4.even?) == true
-puts xor?(5.odd?, 4.odd?) == true
-puts xor?(5.odd?, 4.even?) == false
-puts xor?(5.even?, 4.odd?) == false
+p xor?(5.even?, 4.even?) == true
+p xor?(5.odd?, 4.odd?) == true
+p xor?(5.odd?, 4.even?) == false
+p xor?(5.even?, 4.odd?) == false
+p xor?('hi', 'hi') == false
+p xor?('hi', nil) == true
