@@ -21,9 +21,9 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Tip calculator](./easy_2/03.rb) - current time 8:45
   - [x] [When will I Retire?](./easy_2/04.rb) - current time 11:08
   - [x] [Greeting a user](./easy_2/05.rb)
-  - [ ] [Odd Numbers](./easy_2/06.rb)
-  - [ ] [Even Numbers](./easy_2/07.rb)
-  - [ ] [Sum or Product of Consecutive Integers](./easy_2/08.rb)
+  - [x] [Odd Numbers](./easy_2/06.rb) - current time 2:58
+  - [x] [Even Numbers](./easy_2/07.rb)
+  - [x] [Sum or Product of Consecutive Integers](./easy_2/08.rb) - current time 17:44
   - [ ] [String Assignment](./easy_2/09.rb)
   - [ ] [Mutation](./easy_2/10.rb)
 - [ ] Easy 3
