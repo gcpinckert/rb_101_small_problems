@@ -47,22 +47,27 @@
       # If units digit is 3: `rd`
     # Return string
 
-def century(year)
-  year % 100 == 0 ? century_num = year / 100 : century_num = (year / 100) + 1
-  century_num = century_num.to_s
-
-  if century_num[-2] == '1'
-    century_num << 'th'
+def add_century_ending(century)
+  if century[-2] == '1'
+    century + 'th'
   else
-    case century_num[-1]
-    when '1' then century_num << 'st'
-    when '2' then century_num << 'nd'
-    when '3' then century_num << 'rd'
-    else          century_num << 'th'
+    case century[-1]
+    when '1' then century + 'st'
+    when '2' then century + 'nd'
+    when '3' then century + 'rd'
+    else          century + 'th'
     end
   end
+end
 
-  century_num
+def century(year)
+  century_number =  if year % 100 == 0
+                      year / 100
+                    else
+                      (year / 100) + 1
+                    end
+  
+  add_century_ending(century_number.to_s)
 end
 
 puts century(2000)  == '20th'

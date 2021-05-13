@@ -37,11 +37,11 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Palindromic Strings (Part 1)](./easy_3/08.rb)
   - [x] [Palindromic Strings (Part 2)](./easy_3/09.rb) - current time 9:12
   - [x] [Palindromic Numbers](./easy_3/10.rb) - Further Exploration into leading 0s
-- [x] Easy 4
-  - [ ] [Short Long Short](./easy_4/01.rb)
-  - [ ] [What Century is That?](./easy_4/02.rb)
-  - [ ] [Leap Years (Part 1)](./easy_4/03.rb)
-  - [ ] [Leap Years (Part 2)](./easy_4/04.rb)
+- [ ] Easy 4
+  - [x] [Short Long Short](./easy_4/01.rb) - current time 5:09
+  - [x] [What Century is That?](./easy_4/02.rb) - current time 20:38
+  - [x] [Leap Years (Part 1)](./easy_4/03.rb) - current time 9:22
+  - [x] [Leap Years (Part 2)](./easy_4/04.rb)
   - [ ] [Multiples of 3 and 5](./easy_4/05.rb)
   - [ ] [Running Totals](./easy_4/06.rb)
   - [ ] [Convert a String to a Number!](./easy_4/07.rb)

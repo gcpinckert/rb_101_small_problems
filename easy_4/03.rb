@@ -36,3 +36,37 @@ puts leap_year?(1700) == false
 puts leap_year?(1) == false
 puts leap_year?(100) == false
 puts leap_year?(400) == true
+
+# Further Exploration:
+# Rewrite the method to perform tests in the opposite order
+# Go from most common to least common cases
+
+def leap_year2?(year)
+  if year % 4 == 0
+    if year % 100 == 0
+      if year % 400 == 0
+        return true
+      else
+        return false
+      end
+    end
+
+    return true
+  end
+
+  false
+end
+
+p leap_year2?(2016) == true
+p leap_year2?(2015) == false
+p leap_year2?(2100) == false
+p leap_year2?(2400) == true
+p leap_year2?(240000) == true
+p leap_year2?(240001) == false
+p leap_year2?(2000) == true
+p leap_year2?(1900) == false
+p leap_year2?(1752) == true
+p leap_year2?(1700) == false
+p leap_year2?(1) == false
+p leap_year2?(100) == false
+p leap_year2?(400) == true
