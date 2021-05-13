@@ -48,3 +48,26 @@ puts running_total3([14, 11, 7, 15, 20]) == [14, 25, 32, 47, 67]
 puts running_total3([3]) == [3]
 puts running_total3([]) == []
 puts
+
+# Option 4
+# Initialize empty array
+# Iterate over input array with counter variable to track iterations /index
+  # For each element, use iteration/idx tracker to slice and total a portion
+  # of the array
+  # Append the current total to the empty array
+# Return the array of totals
+
+def running_total4(numbers)
+  sums = []
+  numbers.each_with_index do |_, idx|
+    current_total = numbers[0..idx].sum
+    sums << current_total
+  end
+
+  sums
+end
+
+p running_total4([2, 5, 13]) == [2, 7, 20]
+p running_total4([14, 11, 7, 15, 20]) == [14, 25, 32, 47, 67]
+p running_total4([3]) == [3]
+p running_total4([]) == []

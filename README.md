@@ -42,8 +42,8 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [What Century is That?](./easy_4/02.rb) - current time 20:38
   - [x] [Leap Years (Part 1)](./easy_4/03.rb) - current time 9:22
   - [x] [Leap Years (Part 2)](./easy_4/04.rb)
-  - [ ] [Multiples of 3 and 5](./easy_4/05.rb)
-  - [ ] [Running Totals](./easy_4/06.rb)
+  - [x] [Multiples of 3 and 5](./easy_4/05.rb) - current time 6:42
+  - [x] [Running Totals](./easy_4/06.rb) - current time 6:10
   - [ ] [Convert a String to a Number!](./easy_4/07.rb)
   - [ ] [Convert a String to a Signed Number!](./easy_4/08.rb)
   - [ ] [Convert a Number to a String!](./easy_4/09.rb)
