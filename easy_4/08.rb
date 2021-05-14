@@ -1,22 +1,29 @@
-# Write a method that takes a string of digits as an argument
-# Returns the appropriate number as an integer
-# The string may have a leading + or - sign
-  # If the first character is + return a positive number
-  # If it is - return a negative number
-  # If no sign is given, return a positive number
-# The string will always contain a valid number
-# Do not use any of the standard conversion methods available
-# You may use the string_to_integer method from 07.rb
+=begin
+# Problem
+- Input: string of numerical characters
+  - May have a leading `+` or `-` sign, or no sign
+  - Will always contain a valid number
+- Output: integer representation of the input string
+  - If there is a leading `+`, return a positive integer
+  - If there is a leading `-`, return a negative integer
+  - If there is no sign, return a positive integer
+- You may use the string_to_integer method from the previous exercise
 
-# If the first character in the string is +
-  # Remove the first character
-  # Return the string passed to the string_to_integer method
-# If the first character in the string is -
-  # Remove the first character
-  # Convert the string to an integer
-  # Subtract twice the number from the converted string
-# If the first character in the string is a number
-  # Return the converted string
+# Examples
+string_to_signed_integer('4321') == 4321
+string_to_signed_integer('-570') == -570
+string_to_signed_integer('+100') == 100
+
+# Algorithm
+- Check to see if the number is a positive or negative number
+  - Is there a sign in front?
+  - If `-`, then negative and remove sign
+  - If `+` then positive and remove sign
+  - If first char is number, then positive
+- Convert modified string to integer and assign to number
+- If negative, return number - number * 2
+- Otherwise, return number
+=end
 
 DIGITS = {
   '0' => 0, '1' => 1, '2' => 2, '3' => 3, '4' => 4,
@@ -31,20 +38,16 @@ def string_to_integer(string)
   value
 end
 
-def string_to_signed_integer(string)
-  if string[0] == '-'
-    string = string[1..-1]
-    num = string_to_integer(string)
-    num - (2 * num)
-  elsif string[0] == '+'
-    string = string[1..-1]
-    string_to_integer(string)
-  else
-    string_to_integer(string)
-  end
+def string_to_signed_integer(num_string)
+  negative = (num_string[0] == '-')
+  num_string = num_string[1..-1] unless ('0'..'9').cover?(num_string[0])
+  
+  number = string_to_integer(num_string)
+  
+  return -number if negative
+  number
 end
 
 puts string_to_signed_integer('4321') == 4321
 puts string_to_signed_integer('-570') == -570
 puts string_to_signed_integer('+100') == 100
-puts

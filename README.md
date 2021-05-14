@@ -37,17 +37,17 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Palindromic Strings (Part 1)](./easy_3/08.rb)
   - [x] [Palindromic Strings (Part 2)](./easy_3/09.rb) - current time 9:12
   - [x] [Palindromic Numbers](./easy_3/10.rb) - Further Exploration into leading 0s
-- [ ] Easy 4
+- [x] Easy 4
   - [x] [Short Long Short](./easy_4/01.rb) - current time 5:09
   - [x] [What Century is That?](./easy_4/02.rb) - current time 20:38
   - [x] [Leap Years (Part 1)](./easy_4/03.rb) - current time 9:22
   - [x] [Leap Years (Part 2)](./easy_4/04.rb)
   - [x] [Multiples of 3 and 5](./easy_4/05.rb) - current time 6:42
   - [x] [Running Totals](./easy_4/06.rb) - current time 6:10
-  - [ ] [Convert a String to a Number!](./easy_4/07.rb)
-  - [ ] [Convert a String to a Signed Number!](./easy_4/08.rb)
-  - [ ] [Convert a Number to a String!](./easy_4/09.rb)
-  - [ ] [Convert a Signed Number to a String!](./easy_4/10.rb)
+  - [x] [Convert a String to a Number!](./easy_4/07.rb) - current time 15:57
+  - [x] [Convert a String to a Signed Number!](./easy_4/08.rb) - current time 6:54
+  - [x] [Convert a Number to a String!](./easy_4/09.rb) - current time 6:11
+  - [x] [Convert a Signed Number to a String!](./easy_4/10.rb) - current time 4:49
 - [ ] Easy 5
   - [ ] [ASCII String Value](./easy_5/01.rb)
   - [ ] After Midnight (Part 1)
