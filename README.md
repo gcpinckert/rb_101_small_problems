@@ -49,10 +49,10 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Convert a Number to a String!](./easy_4/09.rb) - current time 6:11
   - [x] [Convert a Signed Number to a String!](./easy_4/10.rb) - current time 4:49
 - [ ] Easy 5
-  - [ ] [ASCII String Value](./easy_5/01.rb)
-  - [ ] After Midnight (Part 1)
-  - [ ] After Midnight (Part 2)
-  - [ ] [Letter Swap](./easy_5/04.rb)
+  - [x] [ASCII String Value](./easy_5/01.rb) - current time 5:26
+  - [x] [After Midnight (Part 1)](./easy_5/02.rb)
+  - [x] [After Midnight (Part 2)](./easy_5/03.rb)
+  - [x] [Letter Swap](./easy_5/04.rb) - current time 6:30
   - [ ] [Clean up the Words](./easy_5/05.rb)
   - [ ] [Letter Counter (Part 1)](./easy_5/06.rb)
   - [ ] [Letter Counter (Part 2)](./easy_5/07.rb)
