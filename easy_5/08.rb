@@ -25,3 +25,15 @@ puts alphabetic_number_sort((0..19).to_a) == [
         8, 18, 11, 15, 5, 4, 14, 9, 19, 1, 7, 17,
         6, 16, 10, 13, 3, 12, 2, 0
       ]
+
+# Further Exploration
+# Rewrite this method to use Enumerable#sort
+
+def alphabetic_number_sort2(nums)
+  nums.sort { |num1, num2| ENGLISH_NUMBERS[num1] <=> ENGLISH_NUMBERS[num2] }
+end
+
+puts alphabetic_number_sort((0..19).to_a) == [
+  8, 18, 11, 15, 5, 4, 14, 9, 19, 1, 7, 17,
+  6, 16, 10, 13, 3, 12, 2, 0
+]

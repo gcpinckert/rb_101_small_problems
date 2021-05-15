@@ -53,10 +53,10 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [After Midnight (Part 1)](./easy_5/02.rb)
   - [x] [After Midnight (Part 2)](./easy_5/03.rb)
   - [x] [Letter Swap](./easy_5/04.rb) - current time 6:30
-  - [ ] [Clean up the Words](./easy_5/05.rb)
-  - [ ] [Letter Counter (Part 1)](./easy_5/06.rb)
-  - [ ] [Letter Counter (Part 2)](./easy_5/07.rb)
-  - [ ] [Alphabetical Numbers](./easy_5/08.rb)
+  - [x] [Clean up the Words](./easy_5/05.rb) - current time 5:51
+  - [x] [Letter Counter (Part 1)](./easy_5/06.rb) - current time 7:04
+  - [x] [Letter Counter (Part 2)](./easy_5/07.rb) - current time 8:02
+  - [x] [Alphabetical Numbers](./easy_5/08.rb) - current time 5:43
   - [ ] [ddaaiillyy double](./easy_5/09.rb)
   - [ ] [Bannerizer](./easy_5/10.rb)
   - [ ] [Spin Me Around in Circles](./easy_5/11.md)
