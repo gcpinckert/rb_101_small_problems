@@ -57,8 +57,8 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Letter Counter (Part 1)](./easy_5/06.rb) - current time 7:04
   - [x] [Letter Counter (Part 2)](./easy_5/07.rb) - current time 8:02
   - [x] [Alphabetical Numbers](./easy_5/08.rb) - current time 5:43
-  - [ ] [ddaaiillyy double](./easy_5/09.rb)
-  - [ ] [Bannerizer](./easy_5/10.rb)
+  - [x] [ddaaiillyy double](./easy_5/09.rb) - current time 10:43
+  - [x] [Bannerizer](./easy_5/10.rb) - current time 8:56
   - [ ] [Spin Me Around in Circles](./easy_5/11.md)
 - [ ] Easy 6
   - [ ] [Cute Angles](./easy_6/01.rb)

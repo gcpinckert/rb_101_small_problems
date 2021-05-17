@@ -1,35 +1,50 @@
-# Given a string as an argument
-# Return a new string that contains:
-  # The value of the original string with all consecutive duplicate characters collapsed
-# Do not use squeeze or squeeze!
+=begin
+# Problem:
+- Input: string
+  - may contain either alphabetical or numberical chars (punctuation?)
+  - may be an empty string 
+- Output: string
+  - contains the value of original string, with all consecutive duplicate chars represented by only a   single character
+  - i.e. 'aabbcc' => 'abc'
+  - empty string returns an empty string
 
-# Initialize an empty string object
-# Create array of all characters in the string
-# Iterate through the array, for each character
-  # If the character is the first in the array
-    # Add it to the empty string object
-  # If the character is the same as the character before it
-    # Go to the next iteration
-  # Otherwise
-    # Add it to the empty string object
-# Return the new string object
+- Do not use #squeeze built-in method
+
+# Examples:
+crunch('ddaaiillyy ddoouubbllee') == 'daily double'
+crunch('4444abcabccba') == '4abcabcba'
+crunch('ggggggggggggggg') == 'g'
+crunch('a') == 'a'
+crunch('') == ''
+
+# Algorithm:
+- Initialize an empty string
+- Convert the input string to an array of chars
+- Iterate over the array of chars
+  - Add the current char to the result string unless the current char is the same as the one next to it
+- Return the result string
+=end
 
 def crunch(string)
-  result = ''
+  crunch_string = ''
   string.chars.each_with_index do |char, idx|
-    if idx == 0 || char != string[idx - 1]
-      result << char
-    else
-      next
-    end
+    crunch_string << char unless char == string[idx + 1]
   end
-
-  result
+  
+  crunch_string
 end
 
+p crunch('ddaaiillyy ddoouubbllee') == 'daily double'
+p crunch('4444abcabccba') == '4abcabcba'
+p crunch('ggggggggggggggg') == 'g'
+p crunch('a') == 'a'
+p crunch('') == ''
 
-puts crunch('ddaaiillyy ddoouubbllee') == 'daily double'
-puts crunch('4444abcabccba') == '4abcabcba'
-puts crunch('ggggggggggggggg') == 'g'
-puts crunch('a') == 'a'
-puts crunch('') == ''
+=begin
+# Further Exploration
+When index is equal to text.length, we are out of bounds of the given string.
+This is because string characters are based on a 0 index. When accessing
+elements that are out of bounds in a string using `[]`, we get a `nil` return.
+Therefore, if we iterate all the way out to text.length and access the next
+element, it will also return `nil`, which triggers our conditional.
+=end
