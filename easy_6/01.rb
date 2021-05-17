@@ -1,47 +1,49 @@
-# Input: Floating point number representing an angle 0-360 degrees
-# Return: String that represents the angle in degrees, minutes, and seconds
-  # Use a degree symbol to represent degrees
-  # A single quote to represent minutes
-  # A double quote to represent seconds. 
-# A circle has 360 degrees
-  # Each degree is divided into 60 minutes
-  # Each minute is divided into 60 seconds
-# Results may differ slightly from test cases depending on how you round
-  # Should be within a second or two of the examples
-# Use two digit numbers with leading zeros when formatting the mins and secs:
-  # 321;03'07"
-# Use the following constant to represent the degree symbol
-  # DEGREE = "\xC2\xB0"
+=begin
+# Problem:
+- Input: a floating point number
+  - Represents an angle between 0 and 360 degrees
+  - Based on examples, we can assume the number will always be positive
+- Output: a string representing that angle in degrees, mins, and seconds
+  - i.e. 00 00' 00"
+  - "\xC2\xB0" can be used as a constant to represent degrees
+  - ' connotes minutes and " connotes seconds
+  - Use two digit numbers with leading 0s when formatting mins and seconds
+- Conversions:
+  - Degrees = whole number part of the decimal
+  - Minutes multiply remaining decimal by 60. Resulting whole number = minutes
+  - Seconds multiply remaining decimal by 60. Resulting number = seconds (rounded if necessary)
 
 # Examples:
-  # dms(30) == %(30°00'00")
-  # dms(76.73) == %(76°43'48")
-  # dms(254.6) == %(254°36'00")
-  # dms(93.034773) == %(93°02'05")
-  # dms(0) == %(0°00'00")
-  # dms(360) == %(360°00'00") || dms(360) == %(0°00'00")
+dms(30) == %(30°00'00")
+dms(76.73) == %(76°43'48")
+dms(254.6) == %(254°36'00")
+dms(93.034773) == %(93°02'05")
+dms(0) == %(0°00'00")
+dms(360) == %(360°00'00") || dms(360) == %(0°00'00")
 
-# Convert the number to the amount of seconds in the angle
-  # multiply by 60, then multiply by 60 again
-# Get the whole number of degrees
-  # Whole number quotient in division by 60
-  # Modulus result = remaining number of seconds
-# Get the whole number of minutes
-  # Whole number quotient in division by 60
-  # Modulus result = remaining number of seconds
-# Return correctly formatted string
+# Algorithm
+- Initialize DEGREE symbol constant and conversion constants
+- Get the number of degrees, convert the float to an integer
+- Get the number of minutes
+  - Subtract the degrees from the number and multiply by 60
+  - Initialize seconds to result - result as an integer
+  - Set mins to result as an integer
+- Get the number of seconds
+  - Multiply seconds by 60 and round to nearest whole number
+- Convert to correctly formatted string
+=end
 
 DEGREE = "\xC2\xB0"
+MINS_PER_DEGREE = 60
+SECS_PER_MIN = 60
 
-def dms(number)
-  angle_in_seconds = (number * 60) * 60
-  degrees_secs = angle_in_seconds.divmod(60 * 60)
-  degrees = degrees_secs[0]
-  mins_secs = degrees_secs[1].divmod(60)
-  minutes = mins_secs[0]
-  seconds = mins_secs[1]
-
-  format %(#{degrees}#{DEGREE}%02d'%02d"), minutes, seconds
+def dms(angle)
+  degrees = angle.to_i
+  mins = (angle - degrees) * MINS_PER_DEGREE
+  secs = ((mins - mins.to_i) * SECS_PER_MIN).to_i
+  mins = mins.to_i
+  
+  format(%(#{degrees}#{DEGREE}%02d'%02d"), mins, secs)
 end
 
 puts dms(30) == %(30°00'00")

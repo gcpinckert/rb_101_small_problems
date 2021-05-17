@@ -48,7 +48,7 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Convert a String to a Signed Number!](./easy_4/08.rb) - current time 6:54
   - [x] [Convert a Number to a String!](./easy_4/09.rb) - current time 6:11
   - [x] [Convert a Signed Number to a String!](./easy_4/10.rb) - current time 4:49
-- [ ] Easy 5
+- [x] Easy 5
   - [x] [ASCII String Value](./easy_5/01.rb) - current time 5:26
   - [x] [After Midnight (Part 1)](./easy_5/02.rb)
   - [x] [After Midnight (Part 2)](./easy_5/03.rb)
@@ -59,9 +59,9 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Alphabetical Numbers](./easy_5/08.rb) - current time 5:43
   - [x] [ddaaiillyy double](./easy_5/09.rb) - current time 10:43
   - [x] [Bannerizer](./easy_5/10.rb) - current time 8:56
-  - [ ] [Spin Me Around in Circles](./easy_5/11.md)
+  - [x] [Spin Me Around in Circles](./easy_5/11.md)
 - [ ] Easy 6
-  - [ ] [Cute Angles](./easy_6/01.rb)
+  - [ ] [Cute Angles](./easy_6/01.rb) - current time 19:30, review format, complete further exploration
   - [ ] [Delete Vowels](./easy_6/02.rb)
   - [ ] [Fibonacci Number Location by Length](./easy_6/03.rb)
   - [ ] [Reversed Arrays (Part 1)](./easy_6/04.rb)
