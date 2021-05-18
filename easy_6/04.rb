@@ -1,14 +1,19 @@
-# Input: array
-# Output: same array, mutated such that it's elements are reversed
-# Do not use Array#reverse or Array#reverse!
+# Problem:
+# - Input: an array
+# - Output: return the same array object
+  # - Reverses it's elements in place
+  # - Do not use the built in reverse method
+  # - If the array has only one element, it should not be modified
+  # - If the array is empty, return an empty array
 
-# Create a copy of the array
-# Initialize a counter variable at -1
-# Iterate through the copy, for each element
-  # Reassign the element in the original array at index counter
-  # as the current element of the copy array
-  # Decrement the counter
-# Return the original array
+# Algorithm:
+  # Create a copy of the array
+  # Initialize a counter variable at -1
+  # Iterate through the copy, for each element
+    # Reassign the element in the original array at index counter
+    # as the current element of the copy array
+    # Decrement the counter
+  # Return the original array
 
 def reverse!(array)
   copy = array.clone

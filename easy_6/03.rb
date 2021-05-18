@@ -20,11 +20,7 @@
   # Break the loop if the amount of digits in sum is equal to the number argument
   # Append sum to the array
   # Increment counter
-# Return the length of the total fibonacci array
-
-# TODO - currently this solution doesn't reach the last method calls solution
-  # Because it times out? Not efficient enough?
-  # Look to improve efficiency!
+# Return the counter + 1
 
 def find_fibonacci_index_by_length(num_of_digits)
   fibonacci = [1, 1]
@@ -33,16 +29,16 @@ def find_fibonacci_index_by_length(num_of_digits)
   loop do
     next_number = fibonacci[counter - 1] + fibonacci[counter - 2]
     fibonacci << next_number
-    break if next_number.digits.size >= num_of_digits
+    break if next_number.to_s.size >= num_of_digits
     counter += 1
   end
 
-  fibonacci.size
+  counter + 1
 end
 
-puts find_fibonacci_index_by_length(2)# == 7          # 1 1 2 3 5 8 13
-puts find_fibonacci_index_by_length(3)# == 12         # 1 1 2 3 5 8 13 21 34 55 89 144
-puts find_fibonacci_index_by_length(10)# == 45
-puts find_fibonacci_index_by_length(100)# == 476
-puts find_fibonacci_index_by_length(1000)# == 4782
-puts find_fibonacci_index_by_length(10000)# == 47847
+puts find_fibonacci_index_by_length(2) == 7          # 1 1 2 3 5 8 13
+puts find_fibonacci_index_by_length(3) == 12         # 1 1 2 3 5 8 13 21 34 55 89 144
+puts find_fibonacci_index_by_length(10) == 45
+puts find_fibonacci_index_by_length(100) == 476
+puts find_fibonacci_index_by_length(1000) == 4782
+puts find_fibonacci_index_by_length(10000) == 47847
