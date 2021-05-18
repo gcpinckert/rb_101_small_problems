@@ -61,16 +61,16 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Bannerizer](./easy_5/10.rb) - current time 8:56
   - [x] [Spin Me Around in Circles](./easy_5/11.md)
 - [ ] Easy 6
-  - [ ] [Cute Angles](./easy_6/01.rb) - current time 19:30, review format, complete further exploration
+  - [x] [Cute Angles](./easy_6/01.rb) - current time 19:30, review format, complete further exploration
   - [x] [Delete Vowels](./easy_6/02.rb) - current time 6:04
   - [x] [Fibonacci Number Location by Length](./easy_6/03.rb) - current time 11:18
   - [x] [Reversed Arrays (Part 1)](./easy_6/04.rb) - current time 8:00
   - [x] [Reversed Arrays (Part 2)](./easy_6/05.rb) - current time 5:23
-  - [ ] [Combining Arrays](./easy_6/06.rb)
-  - [ ] [Halvsies](./easy_6/07.rb)
-  - [ ] [Find the Duplicate](./easy_6/08.rb)
-  - [ ] [Does My List Include This?](./easy_6/09.rb)
-  - [ ] [Right Triangles](./easy_6/10.rb)
+  - [x] [Combining Arrays](./easy_6/06.rb) - current time 2:37
+  - [x] [Halvsies](./easy_6/07.rb) - current time 10:01
+  - [x] [Find the Duplicate](./easy_6/08.rb) - current time 6:38
+  - [x] [Does My List Include This?](./easy_6/09.rb) - current time 5:45
+  - [x] [Right Triangles](./easy_6/10.rb) - current time 9:52
 - [ ] Easy 7
   - [ ] [Combine Two Lists](./easy_7/01.rb)
   - [ ] [Lettercase Counter](./easy_7/02.rb)

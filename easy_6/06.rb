@@ -1,20 +1,21 @@
-# Input: two arrays (arguments)
-# Return: a new array that contains all the values from the argument arrays
-# Only include duplicate values once
+=begin
+# Problem:
+- Input: two arrays
+- Output: an array
+  - containing all values from original two argument arrays
+  - no duplicate values
+  - even if duplicate values come from a single array
+  
+# Example:
+merge([1, 3, 5], [3, 6, 9]) == [1, 3, 5, 6, 9]
 
-# Initialize a new empty array
-# Iterate through the first array
-  # Add each element to the new array
-# Iterate through the second array
-  # Add each element to the new array
-# Delete any repeated elements from the new array
-# Return the new array
+# Algorithm:
+- Concatenate the two arrays together
+- Get rid of any duplicate values
+=end
 
-def merge(array_a, array_b)
-  merged_array = []
-  array_a.each { |element| merged_array << element }
-  array_b.each { |element| merged_array << element }
-  merged_array.uniq
+def merge(array1, array2)
+  (array1 + array2).uniq
 end
 
-puts merge([1, 3, 5], [3, 6, 9]) == [1, 3, 5, 6, 9]
+p merge([1, 3, 5], [3, 6, 9]) == [1, 3, 5, 6, 9]
