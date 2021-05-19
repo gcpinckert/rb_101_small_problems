@@ -77,11 +77,11 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Capitalize Words](./easy_7/03.rb) - current time 4:53
   - [x] [Swap Case](./easy_7/04.rb) - current time 4:18
   - [x] [Staggered Caps (Part 1)](./easy_7/05.rb) - current time 4:14
-  - [ ] [Staggered Caps (Part 2)](./easy_7/06.rb)
-  - [ ] [Multiplicative Average](./easy_7/07.rb)
-  - [ ] [Multiply Lists](./easy_7/08.rb)
-  - [ ] [Multiply All Pairs](./easy_7/09.rb)
-  - [ ] [The End is Near but not Here](./easy_7/10.rb)
+  - [x] [Staggered Caps (Part 2)](./easy_7/06.rb) - current time 5:43
+  - [x] [Multiplicative Average](./easy_7/07.rb) - current time 10:21, review format
+  - [x] [Multiply Lists](./easy_7/08.rb) - current time 5:38
+  - [x] [Multiply All Pairs](./easy_7/09.rb) - current time 7:16
+  - [x] [The End is Near but not Here](./easy_7/10.rb) - current time 2:51
 - [ ] Easy 8
   - [ ] [Sum of Sums](./easy_8/01.rb)
   - [ ] [Madlibs](./easy_8/02.rb)

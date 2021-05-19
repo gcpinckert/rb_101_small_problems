@@ -1,30 +1,40 @@
-# Input: 2 arrays of numbers
-# Return: new array
-  # Contains the product of every pair of numbers that can be formed
-  # between the elements of the two arrays
-  # Sort the results by increasing value
-# Neither argument will be an empty array
+=begin
+# Problem:
+  - Input: 2 arrays containing integers
+    - Neither will be empty
+    - Each contains positive integer
+    - They may be of different sizes
+  - Output: an array of integers
+    - Each element represents the product of a pair of numbers from each input array
+    - Duplicates are allowed
+    - The results should be sorted by increasing value
 
 # Examples:
-  # multiply_all_pairs([2, 4], [4, 3, 1, 2]) == [2, 4, 4, 6, 8, 8, 12, 16]
+  multiply_all_pairs([2, 4], [4, 3, 1, 2]) == [2, 4, 4, 6, 8, 8, 12, 16]
+  [2, 4], [4, 3, 1, 2]
+  2 * 4; 2 * 3; 2 * 1; 2 * 2 => 8, 6, 2, 4
+  4 * 4; 4 * 3; 4 * 1; 4 * 2 => 16, 12, 4, 8
+  => [8, 6, 2, 4, 16, 12, 4, 8]
+  => [2, 4, 4, 6, 8, 8, 12, 16]
 
-# Initialize an empty array
-# Iterate through the first array, for each element
-  # Iterate through the second array, for each element
-    # Multiply the current element of the first array by the current element
-    # Append the product to the empty array
-# Sort the products array in ascending order
-# Return the products array
+# Algorithm:
+- Initialize an empty array for the results
+- Iterate over arr1, for each element
+  - Iterate over arr2, for each element
+    - multiply arr1 current element by arr2 current element
+    - append the product to the results array
+- Sort and return the results array
+=end
 
-def multiply_all_pairs(arr_1, arr_2)
-  products = []
-  arr_1.each do |x|
-    arr_2.each do |y|
-      products << x * y
-    end
+def multiply_all_pairs(arr1, arr2)
+  results = []
+  
+  arr1.each do |ele_a|
+    arr2.each { |ele_b| results << (ele_a * ele_b) }
   end
-
-  products.sort
+  
+  results.sort
 end
 
 p multiply_all_pairs([2, 4], [4, 3, 1, 2]) == [2, 4, 4, 6, 8, 8, 12, 16]
+
