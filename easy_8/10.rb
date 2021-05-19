@@ -1,36 +1,43 @@
 =begin
-Input: a string
-  - The string will always contain some characters
-Output: The middle character or characters (if even)
-  - If the input's length is odd, return only 1 character
-  - If the input's length is even, return 2 characters
-  - Whitespace and punctuation count as characters in the string
+# Problem:
+  - Input: a string
+    - will always contain at least one character
+  - Output: the middle character(s) of the input string
+    - If input has an odd length, return only one character
+    - If input has an even length, return two characters
+    - Whitespace counts as a character
+    - If the middle character is whitespace, that's what you should return
+    - If the string has only one character, return that character
 
-Examples:
-  center_of('I love ruby') == 'e'
-  center_of('Launch School') == ' '
-  center_of('Launch') == 'un'
-  center_of('Launchschool') == 'hs'
-  center_of('x') == 'x'
+# Examples:
+center_of('I love ruby') == 'e'
+  [I0, ' 1', l2, o3, v4, e5, ' 6', r7, u8, b9, y10] => 11 characters. middle is 11 / 2 => 5
+  middle => e5
+center_of('Launch School') == ' '
+  [L0, a1, u2, n3, c4, h5, ' 6', S7, c8, h9, o10, o11, l12] => 13 chars, middle 13/2 => 6
+  middle => ' 6'
+center_of('Launch') == 'un'
+  [L0, a1, u2, n3, c4, h5] => 6 chars, middle => [6/2 -1, 6/2] => [2, 3] => 'un'
+center_of('Launchschool') == 'hs'
+center_of('x') == 'x'
+  [x0] => 1 char, middle => 1/2 => 0 => 'x0'
 
-Algorithm:
-  - If the length of the string is odd
-    - Return the character at index length / 2
-  - If the length of the string is even
-    - Return the 2 characters at index length / 2 - 1
+# Algorithm:
+- Initialize a num_chars variable to the size of the input string
+- Initialize a variable middle_index to size of input string divided by 2
+- If num_chars is odd, return the char at index middle index
+- If num_chars is even, return the two chars starting at index middle index - 1
 =end
 
 def center_of(string)
-  length = string.size
-  if length.odd?
-    string[length / 2]
-  else
-    string[((length / 2) - 1), 2]
-  end
+  num_chars = string.size
+  middle_index = num_chars / 2
+  
+  num_chars.odd? ? string[middle_index] : string[(middle_index - 1), 2]
 end
 
-puts center_of('I love ruby') == 'e'
-puts center_of('Launch School') == ' '
-puts center_of('Launch') == 'un'
-puts center_of('Launchschool') == 'hs'
-puts center_of('x') == 'x'
+p center_of('I love ruby') == 'e'
+p center_of('Launch School') == ' '
+p center_of('Launch') == 'un'
+p center_of('Launchschool') == 'hs'
+p center_of('x') == 'x'

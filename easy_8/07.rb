@@ -1,23 +1,29 @@
 =begin
-Input: string
-Output: string in which every char from input is doubled
-  - If the input is an empty string, return an empty string
+# Problem:
+  - Input: a string
+    - may be an empty string
+  - Output: a new string
+    - same value as the input string, except every character is doubled
+    - an empty string returns an empty string
+    - All characters should be doubled, including whitespace
 
-Examples:
-  repeater('Hello') == "HHeelllloo"
-  repeater("Good job!") == "GGoooodd  jjoobb!!"
-  repeater('') == ''
+# Examples:
+repeater('Hello') == "HHeelllloo"
+  [str[0], str[0], str[1], str[1], str[2], str[2]... etc ]
+repeater("Good job!") == "GGoooodd  jjoobb!!"
+repeater('') == ''
 
-Algorithm: 
-  - Generate an array of characters in the input string
-  - Iterate over the array, for each character
-    - Double it
-  - Join the array into a string
-  - Return the string
+# Algorithm:
+  - Initialize doubled to an empty string
+  - Iterate over the characters in the input string, tracking index
+    - Add the current character twice to the doubled string
+  - Return the doubled string
 =end
 
 def repeater(string)
-  string.chars.map { |char| char * 2 }.join
+  doubled = ''
+  string.size.times { |index| doubled << string[index] * 2 }
+  doubled
 end
 
 p repeater('Hello') == "HHeelllloo"

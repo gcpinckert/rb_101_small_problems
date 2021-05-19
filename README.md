@@ -82,17 +82,17 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Multiply Lists](./easy_7/08.rb) - current time 5:38
   - [x] [Multiply All Pairs](./easy_7/09.rb) - current time 7:16
   - [x] [The End is Near but not Here](./easy_7/10.rb) - current time 2:51
-- [ ] Easy 8
+- [x] Easy 8
   - [x] [Sum of Sums](./easy_8/01.rb) - current time 7:19
   - [x] [Madlibs](./easy_8/02.rb)
   - [x] [Leading Substrings](./easy_8/03.rb) - current time 4:56
   - [x] [All Substrings](./easy_8/04.rb) - current time 11:04
   - [x] [Palindromic Substrings](./easy_8/05.rb) - current time 22:50 (did this from scratch as full problem)
-  - [ ] [fizzbuz](./easy_8/06.rb)
-  - [ ] [Double Char (Part 1)](./easy_8/07.rb)
-  - [ ] [Double Char (Part 2)](./easy_8/08.rb)
-  - [ ] [Reverse the Digits in a Number](./easy_8/09.rb)
-  - [ ] [Get the Middle Character](./easy_8/10.rb)
+  - [x] [fizzbuz](./easy_8/06.rb) - current time 6:58
+  - [x] [Double Char (Part 1)](./easy_8/07.rb) - current time 3:50
+  - [x] [Double Char (Part 2)](./easy_8/08.rb) - current time 8:53
+  - [x] [Reverse the Digits in a Number](./easy_8/09.rb) - current time 2:53
+  - [x] [Get the Middle Character](./easy_8/10.rb) - current time 9:39
 - [ ] Easy 9
   - [ ] [Welcome Stranger](./easy_9/01.rb)
   - [ ] [Double Doubles](./easy_9/02.rb)
