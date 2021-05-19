@@ -1,4 +1,6 @@
 # Input: string
+  # one or more words
+  # containing alphanumeric and other characters
 # Return: new string
   # Every uppercase letter is replaced by its lowercase version
   # Every lowercase letter is replaced by its uppercase version

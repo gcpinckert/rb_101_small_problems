@@ -72,11 +72,11 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Does My List Include This?](./easy_6/09.rb) - current time 5:45
   - [x] [Right Triangles](./easy_6/10.rb) - current time 9:52
 - [ ] Easy 7
-  - [ ] [Combine Two Lists](./easy_7/01.rb)
-  - [ ] [Lettercase Counter](./easy_7/02.rb)
-  - [ ] [Capitalize Words](./easy_7/03.rb)
-  - [ ] [Swap Case](./easy_7/04.rb)
-  - [ ] [Staggered Caps (Part 1)](./easy_7/05.rb)
+  - [x] [Combine Two Lists](./easy_7/01.rb) - current time 4:08
+  - [x] [Lettercase Counter](./easy_7/02.rb) - current time 6:42
+  - [x] [Capitalize Words](./easy_7/03.rb) - current time 4:53
+  - [x] [Swap Case](./easy_7/04.rb) - current time 4:18
+  - [x] [Staggered Caps (Part 1)](./easy_7/05.rb) - current time 4:14
   - [ ] [Staggered Caps (Part 2)](./easy_7/06.rb)
   - [ ] [Multiplicative Average](./easy_7/07.rb)
   - [ ] [Multiply Lists](./easy_7/08.rb)

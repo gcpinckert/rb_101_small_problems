@@ -47,3 +47,12 @@ def interleave2(array1, array2)
 end
 
 p interleave2([1, 2, 3], ['a', 'b', 'c']) == [1, 'a', 2, 'b', 3, 'c']
+
+# Further Exploration
+  # Rewrite the method to use Array#zip
+
+def interleave3(arr1, arr2)
+  arr1.zip(arr2).flatten
+end
+
+p interleave3([1, 2, 3], ['a', 'b', 'c']) == [1, 'a', 2, 'b', 3, 'c']
