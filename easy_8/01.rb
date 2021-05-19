@@ -32,32 +32,42 @@ p sum_of_sums([4]) == 4
 p sum_of_sums([1, 2, 3, 4, 5]) == 35
 
 =begin
-Option 2:
+# Option 2
+# Problem:
+  - Input: an array of numbers
+    - will always contain at least one number
+  - Output: an integer
+    - the sum of sums for each leading subsequence in the array
+    - [1, 2, 3] => (1) + (1 + 2) + (1 + 2 + 3) => 1 + 3 + 6 => 10
 
-- Initialize a counter variable to 0
-- Initialize a total_sum variable to 0
-- Loop while counter is less than the size of the input array
-- For each iteration:
-  - Take the section of the array between index 1 and index counter
-  - Get the sum of that section of the array
-  - Increment the total_sum variable by that sum
-  - Increment the counter by 1
-- Return the total sum
+# Examples:
+sum_of_sums([3, 5, 2]) == (3) + (3 + 5) + (3 + 5 + 2) # -> (21)
+  [(arr[0]), (arr[0] + arr[1]), (arr[0] + arr[1] + arr[2])]
+sum_of_sums([1, 5, 7, 3]) == (1) + (1 + 5) + (1 + 5 + 7) + (1 + 5 + 7 + 3) # -> (36)
+sum_of_sums([4]) == 4
+sum_of_sums([1, 2, 3, 4, 5]) == 35
+
+# Algorithm:
+  - Initialize an empty array sums
+  - Initialize a length variable to 1
+  - Loop
+    - break if length is greater than or equal to the length of the input array
+    - set the current sum equal to the subsection of the array beginning at index 0 and the size of length
+    - Append the current sum to the sums array
+    - Increment length
+  - return the sum of the sums array
 =end
 
-def sum_of_sums2(array)
-  total_sum = 0
-  counter = 0
-  
-  while counter < array.size
-    total_sum += array[0..counter].sum
-    counter += 1
+def sum_of_sums(numbers)
+  sums = []
+  1.upto(numbers.size) do |length|
+    sums << numbers[0, length].sum
   end
-
-  total_sum
+  
+  sums.sum
 end
 
-p sum_of_sums2([3, 5, 2]) == (3) + (3 + 5) + (3 + 5 + 2) # -> (21)
-p sum_of_sums2([1, 5, 7, 3]) == (1) + (1 + 5) + (1 + 5 + 7) + (1 + 5 + 7 + 3) # -> (36)
-p sum_of_sums2([4]) == 4
-p sum_of_sums2([1, 2, 3, 4, 5]) == 35
+p sum_of_sums([3, 5, 2]) == (3) + (3 + 5) + (3 + 5 + 2) # -> (21)
+p sum_of_sums([1, 5, 7, 3]) == (1) + (1 + 5) + (1 + 5 + 7) + (1 + 5 + 7 + 3) # -> (36)
+p sum_of_sums([4]) == 4
+p sum_of_sums([1, 2, 3, 4, 5]) == 35
