@@ -105,11 +105,11 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Grade Book](./easy_9/09.rb) - current time 11:14
   - [x] [Grocery List](./easy_9/10.rb) - current time 4:52
   - [x] [Group Anagrams](./easy_9/11.rb) - current time 11:50
-- [ ] Medium 1
-  - [ ] [Rotation (Part 1)](./medium_1/01.rb)
-  - [ ] [Rotation (Part 2)](./medium_1/02.rb)
-  - [ ] [Rotation (Part 3)](./medium_1/03.rb)
-  - [ ] [1000 Lights](./medium_1/04.rb)
+- [x] Medium 1
+  - [x] [Rotation (Part 1)](./medium_1/01.rb) - current time 5:55
+  - [x] [Rotation (Part 2)](./medium_1/02.rb) - current time 25:25
+  - [x] [Rotation (Part 3)](./medium_1/03.rb) - current time 18:35
+  - [x] [1000 Lights](./medium_1/04.rb) - current time 24:47
   - [ ] [Diamonds!](./medium_1/05.rb)
   - [ ] [Stack Machine Interpretation](./medium_1/06.rb)
   - [ ] [Word to Digit](./medium_1/07.rb)

@@ -40,25 +40,26 @@ n = 10
   10)* - - * - - - - * -
 Returns [1, 4, 9]
 
-Algorithm:
-  - Create an array of n booleans, all set to false
-  - Set a counter variable = 1
-  - Initialize a loop
-    - Break if the counter variable > n
-    - Set a counter to 0
-    - Iterate through the array of booleans
-      - Increment the inner counter by 1
-      - If the inner counter is a multiple of the outer counter, 
-        toggle the boolean
-      - Otherwise, go to the next element
-    - Increment the outer counter variable by 1
-  - Find those lights whose value is "true" (i.e. "on")
-    - Initialize an empty array
-    - Iterate through the array of booleans
-      - If the current element is 'true', add the current number to the array
-      - Otherwise, go to the next iteration
-  - Return the light numbers as an array
+# Algorithm
+- Initialize lights
+  - Initialize an empty array to represent our bank of switches
+  - Iterate a loop n times
+    - Add the boolean false to the switches array
+  - Return the array of booleans
+- Toggle lights and change array as I do so
+  - Iterate from 1 up to n, tracking iteration number
+    - Iterate over the switches with index
+      - If the current switch index + 1 is evenly divisible by the current iteration
+        number
+        - Toggle the switch
+  - Return the mutated array
+- Figure out which lights are on
+  - Initialize an "on" array
+  - Iterate over the bank of switches, tracking iteration number from 1-n
+    - If the switch is on, add the iteration number to the "on" array
+  - Return the "on" array
 =end
+
 def initialize_lights(n)
   lights = []
   n.times { lights << false }
@@ -66,11 +67,9 @@ def initialize_lights(n)
 end
 
 def toggle_lights!(lights, n)
-  1.upto(n) do |i|
-    counter = 0
-    lights.map! do |light|
-      counter += 1
-      counter % i == 0 ? !light : light
+  1.upto(n) do |iteration|
+    lights.map!.with_index do |light, index|
+      (index + 1) % iteration == 0 ? !light : light
     end
   end
 

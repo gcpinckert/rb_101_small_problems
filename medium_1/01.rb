@@ -32,6 +32,7 @@ def rotate_array(array)
   result << result.shift
 end
 
+p "---Rotate Arrays---"
 p rotate_array([7, 3, 5, 2, 9, 1]) == [3, 5, 2, 9, 1, 7]
 p rotate_array(['a', 'b', 'c']) == ['b', 'c', 'a']
 p rotate_array(['a']) == ['a']
@@ -40,19 +41,21 @@ x = [1, 2, 3, 4]
 p rotate_array(x) == [2, 3, 4, 1]   # => true
 p x == [1, 2, 3, 4]                 # => true
 
-# Write a method that roates a string instead of an array
+# Write a method that rotates a string instead of an array
 
 def rotate_string(string)
   rotate_array(string.chars).join
 end
 
+p "---Rotate Strings---"
 p rotate_string('abc') =='bca'
 p rotate_string('a') == 'a'
 
-# Write a method that roates an integer
+# Write a method that rotates an integer
 
 def rotate_ints(int)
   rotate_array(int.digits.reverse).join.to_i
 end
 
+p "---Rotate Integers---"
 p rotate_ints(1234) == 2341
