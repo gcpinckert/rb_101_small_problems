@@ -93,18 +93,18 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Double Char (Part 2)](./easy_8/08.rb) - current time 8:53
   - [x] [Reverse the Digits in a Number](./easy_8/09.rb) - current time 2:53
   - [x] [Get the Middle Character](./easy_8/10.rb) - current time 9:39
-- [ ] Easy 9
-  - [ ] [Welcome Stranger](./easy_9/01.rb)
-  - [ ] [Double Doubles](./easy_9/02.rb)
-  - [ ] [Always Return Negative](./easy_9/03.rb)
-  - [ ] [Counting Up](./easy_9/04.rb)
-  - [ ] [Uppercase Check](./easy_9/05.rb)
-  - [ ] [How long are you?](./easy_9/06.rb)
-  - [ ] [Name Swapping](./easy_9/07.rb)
-  - [ ] [Sequence Count](./easy_9/08.rb)
-  - [ ] [Grade Book](./easy_9/09.rb)
-  - [ ] [Grocery List](./easy_9/10.rb)
-  - [ ] [Group Anagrams](./easy_9/11.rb)
+- [x] Easy 9
+  - [x] [Welcome Stranger](./easy_9/01.rb) - current time 5:20
+  - [x] [Double Doubles](./easy_9/02.rb) - current time 12:28
+  - [x] [Always Return Negative](./easy_9/03.rb) - current time 2:11
+  - [x] [Counting Up](./easy_9/04.rb) - current time 2:21
+  - [x] [Uppercase Check](./easy_9/05.rb) - current time 4:34
+  - [x] [How long are you?](./easy_9/06.rb) - current time 5:52
+  - [x] [Name Swapping](./easy_9/07.rb) - current time 4:09
+  - [x] [Sequence Count](./easy_9/08.rb) - current time 7:37
+  - [x] [Grade Book](./easy_9/09.rb) - current time 11:14
+  - [x] [Grocery List](./easy_9/10.rb) - current time 4:52
+  - [x] [Group Anagrams](./easy_9/11.rb) - current time 11:50
 - [ ] Medium 1
   - [ ] [Rotation (Part 1)](./medium_1/01.rb)
   - [ ] [Rotation (Part 2)](./medium_1/02.rb)

@@ -7,12 +7,13 @@ Output: boolean
   - An empty string returns `true`
 
 Examples:
-  uppercase?('t') == false
-  uppercase?('T') == true
-  uppercase?('Four Score') == false
-  uppercase?('FOUR SCORE') == true
-  uppercase?('4SCORE!') == true
-  uppercase?('') == true
+uppercase?('t') == false            # t is lowercase, false
+uppercase?('T') == true             # T is uppercase, true
+uppercase?('Four Score') == false   # some letters are lowercase, false
+uppercase?('FOUR SCORE') == true    # all letters are uppercase, true, ignore whitespace
+uppercase?('4SCORE!') == true       # all letters are uppercase, true, ignore nums and punctuation
+uppercase?('') == true              # empty string returns true
+
 
 Algorithm:
   - Check to see if the input string is equal to the same string

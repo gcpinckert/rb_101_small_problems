@@ -1,63 +1,54 @@
 =begin
-Input: a given array
-Output: Print out groups of words that are anagrams (nested array)
-  - Anagrams are words that have the same letters in them but in different
-    orders
-  - Each group of anagrams should be represented by a sub-array
+# Problem:
+  - Input: an array of words
+    - test case words are all lowercase
+  - Output: print to the console groups of anagrams
+    - anagrams are words that are different combinations of the same letters
+    - print the anagrams in an array (i.e. ['neon', 'none'])
 
-Example:
-  words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
-            'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
-            'flow', 'neon']
-  
-  => ["demo", "dome", "mode"]
-  => ["neon", "none"]
-  etc.
+# Examples:
+words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
+          'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
+          'flow', 'neon']
+ => ["demo", "dome", "mode"]
+ => ["neon", "none"]
+ => (etc)
+ 
+ # Data structures:
+  - iterate over the given array and create a nested array of anagrams for each combination
+  - then you can iterate over the nested array and output each subarray
 
-Algorithm:
-  - Initialize an empty array
-  - Iterate through the array `words`, for each word
-    - Initialize an empty array
-    - Iterate through the array `words`, for each word
-      - Are the outer loop current word and the inner loop current word 
-        anagrams?
-      - If yes, add them to the empty array inside the outer loop
-    - Add the inner results array to the outer results array
-  - Return the outer results array, with duplicate elements deleted
-  - Output each sub-array
+# Algorithm:
+- Group anagrams together into a nested array of anagram sub-arrays
+  - Initialize total_anagrams to an empty array
+  - Iterate over the input array, for each word
+    - Iterate over the input array, select all those words that are anagrams of the current word
+    - Append the resulting array of anagrams to the total_anagrams array
+- Iterate over the anagram sub-arrays, outputting each
 
-  - Are they anagrams?(two string)
-    - Convert the strings into an array of chars
-    - Put both arrays in alphabetical order
-    - Are they equal?
+- Is it an anagram?
+  - Convert the current word and the word to test into an array of chars
+  - Order each array of chars alphabetically and see if they are equal
 =end
 
-words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
-  'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
-  'flow', 'neon']
-
-def anagrams?(word_a, word_b)
-  word_a.chars.sort == word_b.chars.sort
+def anagrams?(word1, word2)
+  word1.chars.sort == word2.chars.sort
 end
 
-def find_anagrams(strings)
+def group_anagrams(words)
   total_anagrams = []
-
-  strings.each do |string|
-    sub_anagrams = []
-    strings.each do |word|
-      if anagrams?(string, word)
-        sub_anagrams << word
-      end
-    end
-    total_anagrams << sub_anagrams
+  words.each do |word1|
+    total_anagrams << words.select { |word2| anagrams?(word1, word2) }
   end
-
   total_anagrams.uniq
 end
 
-def display_found_anagrams(nested_array)
-  nested_array.each { |sub_array| p sub_array }
+def display_anagrams(total_anagrams)
+  total_anagrams.each { |anagrams| p anagrams }
 end
 
-display_found_anagrams(find_anagrams(words))
+words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
+          'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
+          'flow', 'neon']
+
+display_anagrams(group_anagrams(words))

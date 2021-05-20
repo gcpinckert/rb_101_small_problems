@@ -1,11 +1,15 @@
 =begin
-Input: string, representing a full name
-  - Will always have two words separated by a space
-Output: new string
-  - Contains the last name, a comma, a space, and the first name
+# Problem:
+ - Input: a string, representing name
+  - the format is: first name + ' ' + last name
+ - Output: a string, representing the same name
+  - the format: last name + ',' + ' ' + first name
 
-Example:
-  swap_name('Joe Roberts') == 'Roberts, Joe'
+# Examples
+swap_name('Joe Roberts') == 'Roberts, Joe'
+  - input: 'first last'
+  - output: 'last, first'
+  - to manipulate use [first, last]
 
 Algorithm:
   - Convert the input string to an array of words
