@@ -110,9 +110,9 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Rotation (Part 2)](./medium_1/02.rb) - current time 25:25
   - [x] [Rotation (Part 3)](./medium_1/03.rb) - current time 18:35
   - [x] [1000 Lights](./medium_1/04.rb) - current time 24:47
-  - [ ] [Diamonds!](./medium_1/05.rb)
-  - [ ] [Stack Machine Interpretation](./medium_1/06.rb)
-  - [ ] [Word to Digit](./medium_1/07.rb)
+  - [x] [Diamonds!](./medium_1/05.rb) - current time 19:51
+  - [x] [Stack Machine Interpretation](./medium_1/06.rb) - current time 19:29
+  - [x] [Word to Digit](./medium_1/07.rb) - current time 8:28
   - [ ] [Fibonacci Numbers (Recursion)](./medium_1/08.rb)
   - [ ] [Fibonacci Numbers (Procedural)](./medium_1/09.rb)
   - [ ] [Fibonacci Numbers (Last Digit)](./medium_1/10.rb)

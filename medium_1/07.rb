@@ -1,48 +1,42 @@
 =begin
-- Write a method that takes a sentence and returns a string with any sequence
-  of words that are numbers ('zero', 'one', etc) converted to a string of
-  digits
+# Problem:
+  - Input: a sentence string
+  - Output: the same string, with any "number words" converted to a string of digits
+    - Number words = 'zero', 'one', 'two', 'three', 'four', 'five', 
+                     'six', 'seven', 'eight', 'nine'
+    - Each single digit string can be delimited by spaces
+    - If the number word contained punctuation, it should remain in place
+      (i.e. four. => 4.)
 
-- Input: string
-  - may contain number words like 'one', 'two', 'three'
-- Output: string
-  - all number words have been converted to string digits, '1', '2', '3'
-  - digits are separated by a space as if they are singular words
-    (1 2 3 not 123)
-
-Example:
-word_to_digit('Please call me at five five five one two three four. Thanks.')
+# Example:
+word_to_digit('Please call me at five five five one two three four. Thanks.') 
 == 'Please call me at 5 5 5 1 2 3 4. Thanks.'
 
-Algorithm:
-- Convert input string to array `words`
-- Iterate over array, for each word
-  - Is it a number word?
-    - Transform to appropriate digit
-  - Otherwise, go to next word
-- Join array of words with ' ' delimiter
+# Algorithm:
+- Initialize an array of number words for each corresponding index
+- Iterate over the array of number words, with index
+  - substitute each part of the input string that matches the current number 
+    word with the corresponding index
 - Return the resulting string
 =end
 
-def word_to_digit(sentence)
-  words = sentence.split
-  words.map! do |word|
-    case word.downcase.delete "^a-z"
-    when 'zero'   then '0'
-    when 'one'    then '1'
-    when 'two'    then '2'
-    when 'three'  then '3'
-    when 'four'   then '4'
-    when 'five'   then '5'
-    when 'six'    then '6'
-    when 'seven'  then '7'
-    when 'eight'  then '8'
-    when 'nine'   then '9'
-    else               word
-    end
-  end
+NUMBER_WORDS = %w(zero one two three four five six seven eight nine)
 
-  words.join(' ') # this does not account for any punctuation attached to word
+def word_to_digit(sentence)
+  NUMBER_WORDS.each_with_index do |num_word, index|
+    sentence.gsub!(num_word, index.to_s)
+  end
+  
+  sentence
 end
 
-p word_to_digit('Please call me at five five five one two three four. Thanks.') #== 'Please call me at 5 5 5 1 2 3 4. Thanks.'
+p word_to_digit('Please call me at five five five one two three four. Thanks.') == \
+                'Please call me at 5 5 5 1 2 3 4. Thanks.'
+
+=begin
+# Further Exploration:
+- Change the solution so spaces between consecutive numbers are removed.
+- Leave any spaces that are already in the input string for numbers (not words)
+- Can you format the result to account for phone numbers, using the format:
+  (123) 456-7890
+=end

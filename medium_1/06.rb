@@ -151,23 +151,18 @@ def minilang(program)
   commands = program.split
 
   commands.each do |command|
-
-    if command.match? /\d/
-      register = command.to_i
-
-    else
-      case command
-      when 'PUSH' then stack << register
-      when 'ADD' then register += stack.pop
-      when 'SUB' then register -= stack.pop
-      when 'MULT' then register *= stack.pop
-      when 'DIV' then register /= stack.pop
-      when 'MOD' then register %= stack.pop
-      when 'POP' then register = stack.pop
-      when 'PRINT' then puts register
-      end
+    case command
+    when /\d/     then register = command.to_i
+    when 'PUSH'   then stack << register
+    when 'ADD'    then register += stack.pop
+    when 'SUB'    then register -= stack.pop
+    when 'MULT'   then register *= stack.pop
+    when 'DIV'    then register /= stack.pop
+    when 'MOD'    then register %= stack.pop
+    when 'POP'    then register = stack.pop
+    when 'PRINT'  then puts register
+    else               puts "Invalid command"
     end
-    
   end
 end
 
@@ -202,3 +197,47 @@ minilang('-3 PUSH 5 SUB PRINT')
 
 minilang('6 PUSH')
 # (nothing printed; no PRINT commands)
+
+=begin
+# Further Exploration
+- Write a minilang program to evaluate and and print the result of the following:
+(3 + (4 * 5) - 7) / (5 % 3) => 8
+- [], 0
+- 3
+  [], 3
+- PUSH
+  [3], 5
+- 5
+  [3], 5
+- MOD
+  [], 2
+- PUSH
+  [2], 2
+- 7
+  [2], 7
+- PUSH
+  [2, 7], 7
+- 4
+  [2, 7], 4
+- PUSH
+  [2, 7, 4], 4
+- 5
+  [2, 7, 4], 5
+- MULT
+  [2, 7], 20
+- PUSH
+  [2, 7, 20], 20
+- 3
+  [2, 7, 20], 3
+- ADD
+  [2, 7], 23
+- SUB
+  [2], 16
+- DIV
+  [], 8
+- PRINT
+  # => 8
+=end
+
+puts "---FURTHER EXPLORATION---"
+minilang("3 PUSH 5 MOD PUSH 7 PUSH 4 PUSH 5 MULT PUSH 3 ADD SUB DIV PRINT")
