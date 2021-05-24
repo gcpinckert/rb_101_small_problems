@@ -113,9 +113,9 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Diamonds!](./medium_1/05.rb) - current time 19:51
   - [x] [Stack Machine Interpretation](./medium_1/06.rb) - current time 19:29
   - [x] [Word to Digit](./medium_1/07.rb) - current time 8:28
-  - [ ] [Fibonacci Numbers (Recursion)](./medium_1/08.rb)
-  - [ ] [Fibonacci Numbers (Procedural)](./medium_1/09.rb)
-  - [ ] [Fibonacci Numbers (Last Digit)](./medium_1/10.rb)
+  - [x] [Fibonacci Numbers (Recursion)](./medium_1/08.rb) - current time 10:23
+  - [x] [Fibonacci Numbers (Procedural)](./medium_1/09.rb) - current time 9:42
+  - [x] [Fibonacci Numbers (Last Digit)](./medium_1/10.rb)
 - [ ] Medium 2
   - [ ] [Longest Sentence](./medium_2/01.rb)
   - [ ] [Now I Know by ABCs](./medium_2/02.rb)
