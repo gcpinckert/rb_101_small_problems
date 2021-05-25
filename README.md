@@ -116,17 +116,17 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Fibonacci Numbers (Recursion)](./medium_1/08.rb) - current time 10:23
   - [x] [Fibonacci Numbers (Procedural)](./medium_1/09.rb) - current time 9:42
   - [x] [Fibonacci Numbers (Last Digit)](./medium_1/10.rb)
-- [ ] Medium 2
-  - [ ] [Longest Sentence](./medium_2/01.rb)
+- [x] Medium 2
+  - [x] [Longest Sentence](./medium_2/01.rb)
   - [x] [Now I Know by ABCs](./medium_2/02.rb) - current time 11:43
   - [x] [Lettercase Percentage Ratio](./medium_2/03.rb) - current time 10:11
   - [x] [Matching Parentheses?](./medium_2/04.rb)
   - [x] [Triangle Sides](./medium_2/05.rb)
   - [x] [Tri-Angles](./medium_2/06.rb)
   - [x] [Unlucky Days](./medium_2/07.rb)
-  - [ ] Next Featured Number Higher than a Given Value
-  - [ ] Bubble Sort
-  - [ ] Sum Square - Square Sum
+  - [x] [Next Featured Number Higher than a Given Value](./medium_2/08.rb)
+  - [x] [Bubble Sort](./medium_2/09.rb)
+  - [x] [Sum Square - Square Sum](./medium_2/10.rb)
 - [ ] Advanced 1
   - [ ] Madlibs Revisited
   - [ ] Seeing Stars
