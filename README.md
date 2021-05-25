@@ -128,10 +128,11 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Bubble Sort](./medium_2/09.rb)
   - [x] [Sum Square - Square Sum](./medium_2/10.rb)
 - [ ] Advanced 1
-  - [ ] Madlibs Revisited
-  - [ ] Seeing Stars
-  - [ ] Transpose 3x3
-  - [ ] Transpose MxN
+  - [x] [Madlibs Revisited](./advanced/01.rb)
+  - [x] [Seeing Stars](./advanced/02.rb)
+  - [x] [Transpose 3x3](./advanced/03.rb)
+  - [x] [Transpose MxN](./advanced/04.rb)
+  - [x] [Rotating Matrices](./advanced/05.rb)
   - [ ] Fix the Bug
   - [ ] Merge Sorted Lists
   - [ ] Merge Sort
