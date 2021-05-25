@@ -133,10 +133,10 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Transpose 3x3](./advanced/03.rb)
   - [x] [Transpose MxN](./advanced/04.rb)
   - [x] [Rotating Matrices](./advanced/05.rb)
-  - [ ] Fix the Bug
-  - [ ] Merge Sorted Lists
-  - [ ] Merge Sort
-  - [ ] Egyptian Fractions
+  - [x] [Fix the Bug](./advanced/06.rb)
+  - [x] [Merge Sorted Lists](./advanced/07.rb)
+  - [x] [Merge Sort](./advanced/08.rb)
+  - [x] [Egyptian Fractions](./advanced/09.rb)
 - [ ] Deubbing
   - [ ] Countdown
   - [ ] HEY YOU!
