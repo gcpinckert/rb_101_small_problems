@@ -127,7 +127,7 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Next Featured Number Higher than a Given Value](./medium_2/08.rb)
   - [x] [Bubble Sort](./medium_2/09.rb)
   - [x] [Sum Square - Square Sum](./medium_2/10.rb)
-- [ ] Advanced 1
+- [x] Advanced 1
   - [x] [Madlibs Revisited](./advanced/01.rb)
   - [x] [Seeing Stars](./advanced/02.rb)
   - [x] [Transpose 3x3](./advanced/03.rb)
@@ -137,12 +137,12 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Merge Sorted Lists](./advanced/07.rb)
   - [x] [Merge Sort](./advanced/08.rb)
   - [x] [Egyptian Fractions](./advanced/09.rb)
-- [ ] Deubbing
-  - [ ] Countdown
-  - [ ] HEY YOU!
-  - [ ] Valid Series?
-  - [ ] Reverse Sentence
-  - [ ] Card Deck
+- [ ] Debugging
+  - [x] [Countdown](./debugging/01.rb)
+  - [x] [HEY YOU!](./debugging/02.rb)
+  - [x] [Valid Series?](./debugging/03.rb)
+  - [x] [Reverse Sentence](./debugging/04.rb)
+  - [x] [Card Deck](./debugging/05.rb)
   - [ ] Getting things Done
   - [ ] Neutralizer
   - [ ] Password
