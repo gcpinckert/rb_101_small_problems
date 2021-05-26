@@ -137,15 +137,15 @@ Solutions to the Launch School RB101 - RB109 Small Problems exercises
   - [x] [Merge Sorted Lists](./advanced/07.rb)
   - [x] [Merge Sort](./advanced/08.rb)
   - [x] [Egyptian Fractions](./advanced/09.rb)
-- [ ] Debugging
+- [x] Debugging
   - [x] [Countdown](./debugging/01.rb)
   - [x] [HEY YOU!](./debugging/02.rb)
   - [x] [Valid Series?](./debugging/03.rb)
   - [x] [Reverse Sentence](./debugging/04.rb)
   - [x] [Card Deck](./debugging/05.rb)
-  - [ ] Getting things Done
-  - [ ] Neutralizer
-  - [ ] Password
-  - [ ] Number Guessing Game
-  - [ ] TF-IDF
-  - [ ] What's wrong with the output?
+  - [x] [Getting things Done](./debugging/06.rb)
+  - [x] [Neutralizer](./debugging/07.rb)
+  - [x] [Password](./debugging/08.rb)
+  - [x] [Number Guessing Game](./debugging/09.rb)
+  - [x] [TF-IDF](./debugging/10.rb)
+  - [x] [What's wrong with the output?](./debugging/10.rb)
